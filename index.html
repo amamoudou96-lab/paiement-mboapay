@@ -78,10 +78,13 @@
   .btn-mtn .dot{background:var(--navy);}
   .hint{text-align:center; color:var(--muted); font-size:.88rem; margin-top:2px;}
   .recipient{
-    text-align:center; margin-top:14px; font-size:.98rem; color:var(--navy);
-    background:var(--cream); border-radius:12px; padding:10px 12px; line-height:1.5;
+    text-align:center; margin-top:18px; padding:18px 14px; border-radius:16px;
+    background:var(--gold); color:var(--navy); line-height:1.4;
+    box-shadow:0 4px 0 rgba(0,22,84,.22);
   }
-  .recipient span{color:var(--muted); font-size:.85rem;}
+  .recipient .rec-label{font-size:1.05rem; font-weight:800;}
+  .recipient .rec-name{display:block; font-size:1.55rem; font-weight:800; line-height:1.25; margin-top:4px;}
+  .recipient span{color:#3a4763; font-size:.92rem; font-weight:600; display:block; margin-top:8px; line-height:1.45;}
   .code-box{
     display:none; margin-top:16px; background:var(--navy); border-radius:16px; padding:16px;
     color:#fff; text-align:center;
@@ -143,7 +146,7 @@
       <span class="dot"></span> MTN Mobile Money
     </button>
     <p class="hint" id="hint">Entre d'abord le montant ci-dessus.</p>
-    <p class="recipient">Destinataire : <b>Mouhammadou elwags</b><br><span>C'est le nom que tu verras sur ton téléphone lors du retrait.</span></p>
+    <p class="recipient"><span class="rec-label">Destinataire :</span><span class="rec-name">Mouhammadou elwags</span><span>C'est le nom que tu verras sur ton téléphone lors du retrait.</span></p>
 
     <div class="code-box" id="codeBox">
       <div class="code-label">Code composé :</div>
