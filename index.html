@@ -77,6 +77,11 @@
   .btn-mtn{background:var(--mtn); color:var(--navy);}
   .btn-mtn .dot{background:var(--navy);}
   .hint{text-align:center; color:var(--muted); font-size:.88rem; margin-top:2px;}
+  .recipient{
+    text-align:center; margin-top:14px; font-size:.98rem; color:var(--navy);
+    background:var(--cream); border-radius:12px; padding:10px 12px; line-height:1.5;
+  }
+  .recipient span{color:var(--muted); font-size:.85rem;}
   .code-box{
     display:none; margin-top:16px; background:var(--navy); border-radius:16px; padding:16px;
     color:#fff; text-align:center;
@@ -138,12 +143,13 @@
       <span class="dot"></span> MTN Mobile Money
     </button>
     <p class="hint" id="hint">Entre d'abord le montant ci-dessus.</p>
+    <p class="recipient">Destinataire : <b>Mouhammadou elwags</b><br><span>C'est le nom que tu verras sur ton téléphone lors du retrait.</span></p>
 
     <div class="code-box" id="codeBox">
       <div class="code-label">Code composé :</div>
       <div class="code" id="codeText"></div>
       <button type="button" class="copy-btn" id="copyBtn">Copier le code</button>
-      <p class="code-note">Ton téléphone ouvre le clavier avec ce code — appuie sur Appeler, puis entre ton code PIN pour confirmer le paiement.</p>
+      <p class="code-note">Ton téléphone ouvre le clavier avec ce code — appuie sur Appeler, vérifie que le nom affiché est bien <b>Mouhammadou elwags</b>, puis entre ton code PIN pour confirmer le paiement.</p>
     </div>
   </div>
 
